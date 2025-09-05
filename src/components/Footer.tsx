@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-[#1a1a1a] border-t border-[#333333] py-6">
+    <footer id="socials" className="bg-[#1a1a1a] border-t border-[#333333] py-6">
       <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between text-gray-400 text-sm px-4">
        
         {/* Left: Logo (stick to left edge) */}

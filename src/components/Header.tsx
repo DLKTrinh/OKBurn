@@ -3,7 +3,7 @@ import { Menu, X, Wallet, ShoppingCart } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigationLinks = ['About', 'Features', 'Tokenomic', 'Roadmap', 'Contact'];
+  const navigationLinks = ['About', 'Features', 'Tokenomic', 'Roadmap', 'Socials'];
   
   return (
     <header className="fixed top-0 left-0 w-full bg-[#262626] z-50">
