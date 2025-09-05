@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, Legend, Sector, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, Sector, ResponsiveContainer } from "recharts";
 
 const data = [
   { name: "Liquidity & Fair Launch", value: 90 },
@@ -94,26 +94,6 @@ const renderActiveShape = (props: any) => {
         {percent}% ({value.toLocaleString()})
       </text>
     </g>
-  );
-};
-
-// Custom legend component
-const CustomLegend = (props: any) => {
-  const { payload } = props;
-  return (
-    <div className="flex flex-wrap justify-center gap-4 mt-4">
-      {payload.map((entry: any, index: number) => (
-        <div key={index} className="flex items-center gap-2">
-          <div
-            className="w-4 h-4 rounded-sm"
-            style={{ backgroundColor: entry.color }}
-          />
-          <span className="text-white text-sm font-medium">
-            {entry.value}: {data[index].value}%
-          </span>
-        </div>
-      ))}
-    </div>
   );
 };
 
