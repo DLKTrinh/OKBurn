@@ -41,6 +41,10 @@ dist-ssr
 .vite
 .cache
 
+# Env files
+.env
+.env.*
+!.env.example
 
 # Misc
 .DS_Store
