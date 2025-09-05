@@ -117,7 +117,7 @@ const Tokenomics: React.FC = () => {
         Distribution of tokens across liquidity provision and vault mechanisms
       </p>
       
-      <div className="w-full max-w-4xl" style={{ height: '450px' }}>
+      <div className="w-full max-w-4xl" style={{ height: '550px' }}>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
@@ -164,6 +164,9 @@ const Tokenomics: React.FC = () => {
           </div>
         ))}
       </div>
+
+       <div className="mx-auto border-t border-[#666666] mt-16 w-[900px]"></div>
+
     </section>
   );
 };

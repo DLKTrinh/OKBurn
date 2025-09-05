@@ -43,11 +43,12 @@ const Header = () => {
                 <span>Buy $OKBURN</span>
               </a>
             </nav>
-            
+            {/* Connect Button 
             <button className="bg-[#FF0000] hover:bg-[#B30000] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2">
               <Wallet size={16} />
               <span>Connect</span>
             </button>
+            */}
           </div>
           
           {/* Mobile menu button */}
