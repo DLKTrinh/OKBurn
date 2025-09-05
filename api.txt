@@ -1,0 +1,3 @@
+API key: a29b2635-df57-4bf1-b210-edf033be7c43
+Secret: B8C99E1E570ABABF46651B62AFDE454C
+ReqPath: /api/v5/dex/balance/total-value-by-address?address=0x7F8d94814b0A9cA18520cA2Bc5511E0d41cAAB26&chains=1&assetType=196
