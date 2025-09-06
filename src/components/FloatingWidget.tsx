@@ -7,7 +7,7 @@ const FloatingWidget = () => {
     // Automatically detect based on current page protocol
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const host = process.env.NODE_ENV === 'production'
-      ? 'https://okburn-server.onrender.com'  // Replace with your actual Render backend URL
+      ? 'okburn-server.onrender.com'  // Replace with your actual Render backend URL
       : 'localhost:5000';
    
     const wsUrl = `${protocol}//${host}`;
