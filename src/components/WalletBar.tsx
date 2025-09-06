@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Copy, Wallet } from "lucide-react";
 
 const WalletBar = () => {
-  const walletAddress = "0x1234ABCD5678EF9012345678ABCD1234EF567890"; // sample wallet
+  const walletAddress = "0x00e8e5c5c3457C185bba45F871704BbC2fA2dEaD"; // sample wallet
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
