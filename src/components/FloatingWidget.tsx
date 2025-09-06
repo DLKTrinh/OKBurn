@@ -4,7 +4,14 @@ const FloatingWidget = () => {
   const [balance, setBalance] = useState<number | null>(null);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:5000");
+    // Automatically detect based on current page protocol
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const host = process.env.NODE_ENV === 'production'
+      ? 'https://okburn-server.onrender.com'  // Replace with your actual Render backend URL
+      : 'localhost:5000';
+   
+    const wsUrl = `${protocol}//${host}`;
+    const ws = new WebSocket(wsUrl)
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
